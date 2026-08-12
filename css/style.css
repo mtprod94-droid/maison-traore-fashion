@@ -776,7 +776,51 @@ h2 em {
     .header-button {
         display: none;
     }
+.navigation.menu-open {
+    position: fixed;
 
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    padding: 120px 8vw 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    background: rgba(10, 10, 10, 0.98);
+
+    z-index: 100;
+
+    overflow-y: auto;
+}
+
+.navigation.menu-open a {
+    display: block;
+
+    color: var(--white);
+
+    font-family: var(--serif);
+
+    font-size: 42px;
+
+    line-height: 1;
+
+    text-decoration: none;
+}
+
+.navigation.menu-open a:hover {
+    color: var(--gold);
+}
     .menu-button {
         display: flex;
 
