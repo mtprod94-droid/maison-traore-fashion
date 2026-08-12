@@ -2728,3 +2728,41 @@ button {
     }
 
 }
+/* ================= FOOTER SOCIAL ================= */
+
+.footer-social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.footer-social a {
+    color: #999;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--gold);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .footer-social {
+        gap: 20px;
+    }
+
+}
