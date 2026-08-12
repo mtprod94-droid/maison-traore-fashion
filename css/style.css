@@ -766,10 +766,15 @@ h2 em {
 
 @media (max-width: 800px) {
 
-    .header {
-        height: 85px;
+.header {
+    position: relative;
 
-        padding: 0 6vw;
+    z-index: 1000;
+
+    height: 85px;
+
+    padding: 0 6vw;
+}
     }
 
     .navigation,
@@ -821,27 +826,41 @@ h2 em {
 .navigation.menu-open a:hover {
     color: var(--gold);
 }
-    .menu-button {
-        display: flex;
+   .menu-button {
+    position: relative;
 
-        width: 35px;
-        height: 35px;
+    z-index: 1000;
 
-        border: none;
+    display: flex;
 
-        background: transparent;
+    width: 35px;
+    height: 35px;
 
-        flex-direction: column;
-        justify-content: center;
-        gap: 7px;
+    border: none;
+
+    background: transparent;
+
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+
+    pointer-events: auto;
+}
     }
 
-    .menu-button span {
-        width: 28px;
-        height: 1px;
+.menu-button span {
+    display: block;
 
-        background: var(--white);
-    }
+    width: 28px;
+    height: 1px;
+
+    background: var(--white);
+
+    pointer-events: none;
+}
 
     .hero {
         min-height: 720px;
