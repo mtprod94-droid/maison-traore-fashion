@@ -2338,3 +2338,101 @@ h2 em {
     }
 
 }
+/* =====================================================
+   LUXURY FOOTER
+   ===================================================== */
+
+.footer {
+    position: relative;
+
+    padding: 90px 8vw 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: end;
+
+    gap: 40px;
+
+    background: #080808;
+
+    border-top: 1px solid rgba(255,255,255,0.12);
+
+    color: var(--white);
+}
+
+.footer-logo {
+    font-family: var(--serif);
+
+    font-size: 24px;
+
+    letter-spacing: 3px;
+}
+
+.footer p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+.footer > a {
+    justify-self: end;
+
+    color: #999;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.footer > a:hover {
+    color: var(--gold);
+}
+
+
+/* ================= FOOTER MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .footer {
+        padding: 70px 8vw 35px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 22px;
+
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 21px;
+    }
+
+    .footer p {
+        line-height: 1.7;
+    }
+
+    .footer > a {
+        justify-self: auto;
+    }
+
+}
