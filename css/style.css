@@ -468,20 +468,54 @@ button {
 
 /* ================= INTRO ================= */
 
+/* =====================================================
+   LA MAISON / SIGNATURE
+   ===================================================== */
+
 .intro {
     position: relative;
 
-    min-height: 720px;
+    min-height: 760px;
 
-    padding: 150px 12vw;
+    padding: 160px 12vw;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     background: var(--cream);
+
     color: var(--black);
+
+    overflow: hidden;
 }
+
+
+/* Decorative background detail */
+
+.intro::before {
+    content: "MT";
+
+    position: absolute;
+
+    right: -20px;
+    bottom: -80px;
+
+    font-family: var(--serif);
+
+    font-size: 320px;
+
+    line-height: 1;
+
+    color: rgba(0,0,0,0.035);
+
+    pointer-events: none;
+}
+
+
+/* Section number */
 
 .section-number {
     position: absolute;
@@ -489,46 +523,93 @@ button {
     top: 70px;
     left: 7vw;
 
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
     color: var(--gold);
 
     font-family: var(--serif);
-    font-size: 18px;
+
+    font-size: 20px;
+
+    z-index: 2;
 }
 
-.intro-content {
-    max-width: 750px;
+.section-number::after {
+    content: "";
+
+    width: 45px;
+    height: 1px;
+
+    background: var(--gold);
 }
+
+
+/* Main content */
+
+.intro-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(750px, 100%);
+}
+
+
+/* Eyebrow */
 
 .eyebrow.dark {
     color: #8c6c32;
 }
 
+
+/* Heading */
+
 .intro h2,
 .sur-mesure h2 {
+    margin: 0 0 45px;
+
     font-family: var(--serif);
 
-    font-size: clamp(55px, 7vw, 100px);
+    font-size: clamp(60px, 7vw, 105px);
 
-    line-height: 0.82;
+    line-height: 0.8;
 
     font-weight: 400;
 
-    margin-bottom: 45px;
+    letter-spacing: -2px;
 }
+
+
+/* Body text */
 
 .intro p:not(.eyebrow) {
     max-width: 580px;
 
+    margin-bottom: 18px;
+
     color: #555;
 
     font-size: 13px;
+
     line-height: 2;
 
-    margin-bottom: 18px;
+    font-weight: 300;
 }
 
+
+/* Editorial link */
+
 .text-link {
+    position: relative;
+
     display: inline-flex;
+
+    align-items: center;
+
     gap: 20px;
 
     margin-top: 25px;
@@ -537,16 +618,70 @@ button {
 
     border-bottom: 1px solid var(--black);
 
+    color: var(--black);
+
     font-size: 9px;
-    letter-spacing: 2px;
+
+    letter-spacing: 2.5px;
+
     text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition:
+        gap 0.3s ease,
+        color 0.3s ease;
 }
 
 .text-link span {
     color: var(--gold);
-    font-size: 15px;
+
+    font-size: 16px;
+
+    transition: transform 0.3s ease;
 }
 
+.text-link:hover {
+    gap: 27px;
+
+    color: var(--gold);
+}
+
+.text-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .intro {
+        min-height: 650px;
+
+        padding: 110px 8vw;
+    }
+
+    .section-number {
+        top: 45px;
+        left: 8vw;
+    }
+
+    .intro::before {
+        right: -20px;
+        bottom: -40px;
+
+        font-size: 200px;
+    }
+
+    .intro h2,
+    .sur-mesure h2 {
+        font-size: 65px;
+
+        letter-spacing: -1px;
+    }
+
+}
 
 /* ================= COLLECTIONS ================= */
 
