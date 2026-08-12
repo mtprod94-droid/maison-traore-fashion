@@ -993,4 +993,333 @@ h2 em {
         transition: transform 0.3s ease;
     }
 
+}/* =====================================================
+   LA MAISON — ABOUT PAGE
+   ===================================================== */
+
+.page-hero {
+    position: relative;
+
+    min-height: 680px;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 0 10vw 100px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.35)
+        ),
+        #111;
+}
+
+.page-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+}
+
+.page-hero h1 {
+    font-family: var(--serif);
+
+    font-size: clamp(75px, 10vw, 140px);
+
+    line-height: 0.78;
+
+    font-weight: 400;
+
+    letter-spacing: -4px;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(198,161,91,0.14),
+            transparent 35%
+        );
+}
+
+
+/* ================= ABOUT INTRO ================= */
+
+.about-intro {
+    padding: 150px 12vw;
+
+    background: var(--cream);
+
+    color: var(--black);
+}
+
+.about-intro h2 {
+    max-width: 900px;
+
+    margin-bottom: 55px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(60px, 8vw, 110px);
+
+    line-height: 0.82;
+
+    font-weight: 400;
+}
+
+.about-text {
+    max-width: 850px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+}
+
+.about-text p {
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 2;
+}
+
+
+/* ================= VISION ================= */
+
+.vision {
+    position: relative;
+
+    min-height: 750px;
+
+    padding: 150px 12vw;
+
+    display: flex;
+
+    align-items: center;
+
+    background: var(--black);
+}
+
+.vision-number {
+    position: absolute;
+
+    top: 80px;
+    left: 7vw;
+
+    color: var(--gold);
+
+    font-family: var(--serif);
+
+    font-size: 18px;
+}
+
+.vision-content {
+    max-width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vision h2 {
+    margin-bottom: 50px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(60px, 8vw, 110px);
+
+    line-height: 0.8;
+
+    font-weight: 400;
+}
+
+.vision-content > p:not(.eyebrow) {
+    max-width: 600px;
+
+    color: #999;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= SAVOIR-FAIRE ================= */
+
+.savoir-faire {
+    padding: 150px 10vw;
+
+    background: var(--cream);
+
+    color: var(--black);
+}
+
+.savoir-heading {
+    margin-bottom: 100px;
+}
+
+.savoir-heading h2 {
+    font-family: var(--serif);
+
+    font-size: clamp(60px, 8vw, 105px);
+
+    line-height: 0.8;
+
+    font-weight: 400;
+}
+
+.savoir-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 35px;
+}
+
+.savoir-item {
+    padding-top: 25px;
+
+    border-top: 1px solid #bbb;
+}
+
+.savoir-item span {
+    color: #9b773a;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+.savoir-item h3 {
+    margin: 30px 0 15px;
+
+    font-family: var(--serif);
+
+    font-size: 35px;
+
+    font-weight: 400;
+}
+
+.savoir-item p {
+    color: #666;
+
+    font-size: 11px;
+
+    line-height: 1.9;
+}
+
+
+/* ================= SIGNATURE ================= */
+
+.signature {
+    min-height: 650px;
+
+    padding: 120px 8vw;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #292929,
+            #090909 65%
+        );
+}
+
+.signature h2 {
+    margin-bottom: 45px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(60px, 8vw, 110px);
+
+    line-height: 0.8;
+
+    font-weight: 400;
+}
+
+
+/* ================= MOBILE ABOUT ================= */
+
+@media (max-width: 800px) {
+
+    .page-hero {
+        min-height: 620px;
+
+        padding: 0 7vw 80px;
+    }
+
+    .page-hero h1 {
+        font-size: 70px;
+
+        letter-spacing: -2px;
+    }
+
+    .about-intro {
+        padding: 100px 8vw;
+    }
+
+    .about-intro h2 {
+        font-size: 65px;
+    }
+
+    .about-text {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .vision {
+        min-height: 650px;
+
+        padding: 100px 8vw;
+    }
+
+    .vision h2 {
+        font-size: 65px;
+    }
+
+    .savoir-faire {
+        padding: 100px 8vw;
+    }
+
+    .savoir-heading {
+        margin-bottom: 60px;
+    }
+
+    .savoir-heading h2 {
+        font-size: 65px;
+    }
+
+    .savoir-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .signature {
+        min-height: 550px;
+    }
+
+    .signature h2 {
+        font-size: 65px;
+    }
+
 }
