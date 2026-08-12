@@ -2174,3 +2174,70 @@ h2 em {
     }
 
 }
+/* =====================================================
+   WHATSAPP FLOATING BUTTON
+   ===================================================== */
+
+.whatsapp-float {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #25D366;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: var(--sans);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    z-index: 900;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .whatsapp-float {
+        right: 18px;
+        bottom: 18px;
+
+        width: 54px;
+        height: 54px;
+
+        font-size: 9px;
+    }
+
+}
