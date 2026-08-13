@@ -502,7 +502,9 @@ button {
 .navigation.menu-open a:hover {
     color: var(--gold-light);
 }
-    .hero {
+    .hero {.section-number {
+    display: none;
+}
         min-height: 720px;
 
         height: 100svh;
@@ -759,7 +761,24 @@ button {
 
 @media (max-width: 800px) {
 
-    .intro {
+    .intro {html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
         min-height: 650px;
 
         padding: 110px 8vw;
