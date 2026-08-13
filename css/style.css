@@ -455,7 +455,53 @@ button {
 .menu-button.active span:last-child {
     transform: translateY(-5px) rotate(-45deg);
 }
+/* ================= MOBILE MENU ================= */
 
+.navigation.menu-open {
+    position: fixed;
+
+    top: 85px;
+    left: 0;
+    right: 0;
+
+    display: flex !important;
+
+    width: 100%;
+    height: calc(100vh - 85px);
+
+    padding: 60px 8vw;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 28px;
+
+    background: rgba(8, 8, 8, 0.98);
+
+    z-index: 9998;
+
+    overflow-y: auto;
+}
+
+.navigation.menu-open a {
+    display: block;
+
+    color: var(--white);
+
+    font-family: var(--serif);
+
+    font-size: 32px;
+
+    font-weight: 400;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.navigation.menu-open a:hover {
+    color: var(--gold-light);
+}
     .hero {
         min-height: 720px;
 
