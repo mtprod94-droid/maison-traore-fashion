@@ -397,7 +397,64 @@ button {
 
 /* ================= HERO MOBILE ================= */
 
-@media (max-width: 800px) {
+.menu-button {
+    position: absolute;
+
+    top: 50%;
+    right: 6vw;
+
+    transform: translateY(-50%);
+
+    display: flex !important;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    -webkit-appearance: none;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 28px;
+    height: 2px;
+
+    background: var(--white);
+
+    opacity: 1;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* MENU OUVERT */
+
+.menu-button.active span:first-child {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.menu-button.active span:last-child {
+    transform: translateY(-5px) rotate(-45deg);
+}
 
     .hero {
         min-height: 720px;
