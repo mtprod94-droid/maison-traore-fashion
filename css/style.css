@@ -2766,3 +2766,527 @@ button {
     }
 
 }
+/* =====================================================
+   COLLECTION DÉCEMBRE 2026
+   ===================================================== */
+
+.decembre-hero {
+    position: relative;
+
+    min-height: 850px;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #080808;
+}
+
+.decembre-hero-image {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/collection-decembre-2026.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.decembre-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5,5,5,0.94) 0%,
+            rgba(5,5,5,0.68) 38%,
+            rgba(5,5,5,0.18) 100%
+        );
+}
+
+.decembre-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(700px, 86%);
+
+    margin-left: 9vw;
+
+    padding-top: 70px;
+}
+
+.decembre-hero h1 {
+    margin: 0;
+
+    font-family: var(--serif);
+
+    font-size: clamp(65px, 8vw, 125px);
+
+    line-height: 0.78;
+
+    font-weight: 400;
+
+    letter-spacing: -4px;
+}
+
+.decembre-hero h1 em {
+    color: var(--gold-light);
+
+    font-style: italic;
+}
+
+.decembre-intro {
+    max-width: 450px;
+
+    margin: 40px 0;
+
+    color: rgba(255,255,255,0.75);
+
+    font-size: 13px;
+
+    line-height: 2;
+}
+
+
+/* =====================================================
+   INTRODUCTION
+   ===================================================== */
+
+.decembre-introduction {
+    position: relative;
+
+    padding: 150px 12vw;
+
+    background: var(--cream);
+
+    color: var(--black);
+
+    overflow: hidden;
+}
+
+.decembre-introduction::after {
+    content: "2026";
+
+    position: absolute;
+
+    right: -30px;
+    bottom: -90px;
+
+    font-family: var(--serif);
+
+    font-size: 300px;
+
+    line-height: 1;
+
+    color: rgba(0,0,0,0.035);
+
+    pointer-events: none;
+}
+
+.decembre-introduction h2 {
+    position: relative;
+    z-index: 1;
+
+    margin: 25px 0 40px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(65px, 8vw, 115px);
+
+    line-height: 0.78;
+
+    font-weight: 400;
+
+    letter-spacing: -3px;
+}
+
+.decembre-introduction h2 em {
+    color: var(--gold);
+
+    font-style: italic;
+}
+
+.decembre-introduction > p:last-child {
+    position: relative;
+    z-index: 1;
+
+    max-width: 650px;
+
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 2;
+}
+
+
+/* =====================================================
+   COLLECTION SELECTION
+   ===================================================== */
+
+.decembre-selection {
+    padding: 140px 7vw;
+
+    background: #080808;
+
+    color: var(--white);
+}
+
+.decembre-heading {
+    margin-bottom: 80px;
+}
+
+.decembre-heading h2 {
+    margin: 25px 0 0;
+
+    font-family: var(--serif);
+
+    font-size: clamp(60px, 7vw, 105px);
+
+    line-height: 0.8;
+
+    font-weight: 400;
+}
+
+.decembre-heading h2 em {
+    color: var(--gold-light);
+
+    font-style: italic;
+}
+
+
+/* =====================================================
+   COLLECTION CARDS
+   ===================================================== */
+
+.decembre-card {
+    position: relative;
+
+    min-height: 620px;
+
+    margin-bottom: 35px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    background: #111;
+}
+
+.decembre-card-image {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/collection-decembre-2026.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    transition: transform 0.8s ease;
+}
+
+.decembre-card:hover .decembre-card-image {
+    transform: scale(1.04);
+}
+
+.decembre-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,0.88) 0%,
+            rgba(0,0,0,0.42) 48%,
+            rgba(0,0,0,0.05) 100%
+        );
+}
+
+.decembre-card-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(550px, 90%);
+
+    padding: 55px;
+}
+
+.decembre-card-content > span {
+    color: var(--gold-light);
+
+    font-family: var(--serif);
+
+    font-size: 18px;
+}
+
+.decembre-card-content h3 {
+    margin: 12px 0 20px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(55px, 6vw, 90px);
+
+    line-height: 0.8;
+
+    font-weight: 400;
+
+    text-transform: uppercase;
+}
+
+.decembre-card-content p {
+    max-width: 440px;
+
+    margin-bottom: 28px;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+.decembre-card-content a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid var(--gold);
+
+    color: var(--white);
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: gap 0.3s ease;
+}
+
+.decembre-card-content a strong {
+    color: var(--gold);
+
+    font-size: 16px;
+
+    font-weight: 400;
+}
+
+.decembre-card-content a:hover {
+    gap: 27px;
+}
+
+
+/* GRANDE OCCASION */
+
+.decembre-card-featured {
+    min-height: 720px;
+}
+
+
+/* =====================================================
+   SUR MESURE
+   ===================================================== */
+
+.decembre-sur-mesure {
+    min-height: 650px;
+
+    padding: 130px 10vw;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5,5,5,0.97),
+            rgba(5,5,5,0.75)
+        );
+
+    color: var(--white);
+}
+
+.decembre-sur-mesure h2 {
+    margin: 25px 0 35px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(60px, 7vw, 105px);
+
+    line-height: 0.8;
+
+    font-weight: 400;
+}
+
+.decembre-sur-mesure h2 em {
+    color: var(--gold-light);
+
+    font-style: italic;
+}
+
+.decembre-sur-mesure p:not(.eyebrow) {
+    max-width: 500px;
+
+    margin-bottom: 35px;
+
+    color: rgba(255,255,255,0.7);
+
+    font-size: 13px;
+
+    line-height: 2;
+}
+
+
+/* =====================================================
+   FINAL CONTACT
+   ===================================================== */
+
+.decembre-contact {
+    padding: 140px 8vw;
+
+    text-align: center;
+
+    background: var(--cream);
+
+    color: var(--black);
+}
+
+.decembre-contact h2 {
+    margin: 25px 0 30px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(65px, 8vw, 115px);
+
+    line-height: 0.78;
+
+    font-weight: 400;
+}
+
+.decembre-contact h2 em {
+    color: var(--gold);
+
+    font-style: italic;
+}
+
+.decembre-contact > p:not(.eyebrow) {
+    margin-bottom: 35px;
+
+    color: #666;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .decembre-hero {
+        min-height: 720px;
+
+        height: 100svh;
+    }
+
+    .decembre-hero-image {
+        background-position: 63% center;
+    }
+
+    .decembre-hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(5,5,5,0.9),
+                rgba(5,5,5,0.4)
+            );
+    }
+
+    .decembre-hero-content {
+        width: 86%;
+
+        margin-left: 7vw;
+
+        padding-top: 60px;
+    }
+
+    .decembre-hero h1 {
+        font-size: clamp(60px, 17vw, 95px);
+
+        letter-spacing: -3px;
+    }
+
+    .decembre-intro {
+        max-width: 320px;
+
+        margin: 30px 0;
+    }
+
+    .decembre-introduction {
+        padding: 110px 8vw;
+    }
+
+    .decembre-introduction h2 {
+        font-size: 65px;
+    }
+
+    .decembre-selection {
+        padding: 100px 6vw;
+    }
+
+    .decembre-heading {
+        margin-bottom: 55px;
+    }
+
+    .decembre-heading h2 {
+        font-size: 65px;
+    }
+
+    .decembre-card,
+    .decembre-card-featured {
+        min-height: 560px;
+    }
+
+    .decembre-card-content {
+        padding: 35px 28px;
+    }
+
+    .decembre-card-content h3 {
+        font-size: 58px;
+    }
+
+    .decembre-sur-mesure {
+        min-height: 600px;
+
+        padding: 100px 8vw;
+    }
+
+    .decembre-sur-mesure h2 {
+        font-size: 65px;
+    }
+
+    .decembre-contact {
+        padding: 110px 8vw;
+    }
+
+    .decembre-contact h2 {
+        font-size: 65px;
+    }
+
+}
