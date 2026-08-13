@@ -7,30 +7,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* ================= MOBILE MENU ================= */
 
-    const menuButton = document.querySelector(".menu-button");
-    const navigation = document.querySelector(".navigation");
+    /* ================= MOBILE MENU ================= */
 
-    if (menuButton && navigation) {
+const menuButton = document.querySelector(".menu-button");
+const navigation = document.querySelector(".navigation");
 
-        menuButton.addEventListener("click", () => {
+if (menuButton && navigation) {
 
-            navigation.classList.toggle("menu-open");
+    menuButton.addEventListener("click", function (event) {
 
-            menuButton.classList.toggle("active");
+        event.preventDefault();
+        event.stopPropagation();
+
+        navigation.classList.toggle("menu-open");
+        menuButton.classList.toggle("active");
+
+    });
+
+    const navigationLinks = navigation.querySelectorAll("a");
+
+    navigationLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navigation.classList.remove("menu-open");
+            menuButton.classList.remove("active");
 
         });
 
-        navigation.querySelectorAll("a").forEach(link => {
-
-            link.addEventListener("click", () => {
-
-                navigation.classList.remove("menu-open");
-                menuButton.classList.remove("active");
-
-            });
-
-        });
-    }
+    });
+}
 
 
     /* ================= SCROLL REVEAL ================= */
