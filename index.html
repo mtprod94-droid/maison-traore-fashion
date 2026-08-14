@@ -49,12 +49,18 @@
         Rendez-vous
     </a>
 
-    <button class="menu-button" aria-label="Menu">
-
-        <span></span>
-        <span></span>
-
-    </button>
+    <button
+    class="menu-button"
+    type="button"
+    aria-label="Menu"
+    onclick="
+        document.querySelector('.navigation').classList.toggle('menu-open');
+        this.classList.toggle('active');
+    "
+>
+    <span></span>
+    <span></span>
+</button>
 
 </header>
 
