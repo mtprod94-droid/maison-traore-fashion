@@ -882,9 +882,10 @@ body {
 }
 
 .homme {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.35)),
-        url("../images/F1AD468E-EC3C-457F-8D33-9F232C5706E4.png");
+    .collection-image.homme {
+    background-image: url("../images/A98C5272-1D3A-4791-9F47-BDCAB53E1FA6.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .femme {
