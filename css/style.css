@@ -3411,4 +3411,81 @@ body {
         font-size: 65px;
     }
 
+}/* ================= MOBILE FIX ================= */
+
+@media (max-width: 800px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden !important;
+    }
+
+    .header {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .hero,
+    .intro,
+    .collections,
+    .atelier,
+    .sur-mesure,
+    .contact,
+    .footer {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .section-number {
+        display: none !important;
+    }
+
+    .menu-button {
+        pointer-events: auto !important;
+        touch-action: manipulation;
+    }
+
+    .navigation.menu-open {
+        display: flex !important;
+        position: fixed !important;
+
+        top: 85px;
+        left: 0;
+        right: 0;
+
+        width: 100vw !important;
+        max-width: 100vw !important;
+
+        height: calc(100vh - 85px);
+
+        box-sizing: border-box;
+
+        padding: 60px 8vw;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 28px;
+
+        background: #080808;
+
+        z-index: 9998;
+    }
+
+    .navigation.menu-open a {
+        display: block !important;
+
+        color: #ffffff !important;
+
+        font-family: var(--serif);
+
+        font-size: 32px;
+
+        text-decoration: none;
+    }
 }
