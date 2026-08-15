@@ -881,11 +881,11 @@ body {
     transform: scale(1.06);
 }
 
-.homme {
-    .collection-image.homme {
-    background-image: url("../images/A98C5272-1D3A-4791-9F47-BDCAB53E1FA6.png");
-    background-size: cover;
-    background-position: center;
+.collection-image.homme {
+    background-image: url("../images/A98C5272-1D3A-4791-9F47-BDCAB53E1FA6.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
 }
 
 .femme {
