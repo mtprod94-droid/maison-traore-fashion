@@ -3494,4 +3494,11 @@ body {
 
         text-decoration: none;
     }
+}/* ================= FEMME IMAGE ================= */
+
+.collection-image.femme {
+    background-image: url("../images/IMG_8100.jpeg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
 }
