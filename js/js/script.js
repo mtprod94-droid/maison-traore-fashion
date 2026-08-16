@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* ================= MOBILE MENU ================= */
 
-    /* ================= MOBILE MENU ================= */
-
-const menuButton = document.querySelector(".menu-button");
+    const menuButton = document.querySelector(".menu-button");
 const navigation = document.querySelector(".navigation");
 
 if (menuButton && navigation) {
@@ -24,9 +22,7 @@ if (menuButton && navigation) {
 
     });
 
-    const navigationLinks = navigation.querySelectorAll("a");
-
-    navigationLinks.forEach(function (link) {
+    navigation.querySelectorAll("a").forEach(function (link) {
 
         link.addEventListener("click", function () {
 
