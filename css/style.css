@@ -3502,3 +3502,141 @@ body {
     background-position: center center !important;
     background-repeat: no-repeat !important;
 }
+/* =====================================================
+   RENDEZ-VOUS — MOBILE FIRST
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .appointment-hero {
+        min-height: 620px;
+        height: 100svh;
+    }
+
+    .appointment-hero .page-hero-content {
+        width: 86%;
+        margin-left: 7vw;
+        padding-top: 70px;
+    }
+
+    .appointment-hero h1 {
+        font-size: clamp(62px, 17vw, 95px);
+        line-height: 0.8;
+        letter-spacing: -3px;
+    }
+
+    .appointment-intro {
+        padding: 100px 8vw;
+    }
+
+    .appointment-intro h2 {
+        font-size: 65px;
+        line-height: 0.82;
+    }
+
+    .appointment-intro p:not(.eyebrow) {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .appointment-section {
+        padding: 90px 7vw;
+    }
+
+    .appointment-form-wrapper {
+        width: 100%;
+    }
+
+    .appointment-form-heading h2 {
+        font-size: 62px;
+        line-height: 0.82;
+    }
+
+    .appointment-form {
+        margin-top: 55px;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 10px;
+
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 16px 14px;
+
+        border: 1px solid rgba(0,0,0,0.18);
+
+        background: transparent;
+
+        color: var(--black);
+
+        font-family: var(--sans);
+
+        font-size: 13px;
+
+        border-radius: 0;
+
+        outline: none;
+    }
+
+    .form-group textarea {
+        min-height: 170px;
+
+        resize: vertical;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: var(--gold);
+    }
+
+    .form-submit {
+        width: 100%;
+        min-height: 56px;
+
+        margin-top: 10px;
+
+        border: none;
+
+        cursor: pointer;
+    }
+
+    .appointment-whatsapp {
+        padding: 100px 8vw;
+
+        text-align: center;
+    }
+
+    .appointment-whatsapp h2 {
+        font-size: 60px;
+        line-height: 0.82;
+    }
+
+    .appointment-whatsapp .button {
+        margin-top: 20px;
+    }
+
+}
