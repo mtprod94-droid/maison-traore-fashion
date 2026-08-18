@@ -902,7 +902,9 @@ body {
 .enfant {
     background-image:
         linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.35)),
-        url("../images/enfant.jpg");
+        url("../images/249003CA-83B0-4725-B707-2E407D2BC0AA.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .ceremony {
