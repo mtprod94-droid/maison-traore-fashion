@@ -17,8 +17,9 @@ if (menuButton && navigation) {
         event.preventDefault();
         event.stopPropagation();
 
-        navigation.classList.toggle("menu-open");
-        menuButton.classList.toggle("active");
+        const isOpen = navigation.classList.toggle("menu-open");
+
+        menuButton.classList.toggle("active", isOpen);
 
     });
 
@@ -32,6 +33,7 @@ if (menuButton && navigation) {
         });
 
     });
+
 }
 
 
