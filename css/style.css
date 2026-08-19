@@ -502,11 +502,12 @@ button {
 .navigation.menu-open a:hover {
     color: var(--gold-light);
 }
-    .hero {.section-number {
-    display: none;
-}
-        min-height: 720px;
+        .section-number {
+        display: none;
+    }
 
+    .hero {
+        min-height: 720px;
         height: 100svh;
     }
 
