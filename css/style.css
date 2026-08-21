@@ -2167,9 +2167,7 @@ body {
 
 .form-row {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 25px;
 }
 
@@ -2181,11 +2179,12 @@ body {
     color: #aaa;
 
     font-size: 9px;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
 }
+
+
+/* INPUTS / SELECT / TEXTAREA */
 
 .form-group input,
 .form-group select,
@@ -2195,27 +2194,36 @@ body {
     padding: 17px 0;
 
     border: none;
-
     border-bottom: 1px solid #444;
 
     outline: none;
 
     background: transparent;
 
-    color: white;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
 
     font-family: var(--sans);
-
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.5;
 
     transition: border-color 0.3s ease;
 }
+
+
+/* FOCUS */
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     border-bottom-color: var(--gold);
+
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
 }
+
+
+/* TEXTAREA */
 
 .form-group textarea {
     resize: vertical;
@@ -2223,22 +2231,47 @@ body {
     min-height: 150px;
 }
 
+
+/* SELECT */
+
 .form-group select {
     appearance: none;
+    -webkit-appearance: none;
 
     cursor: pointer;
 }
 
 .form-group select option {
-    background: #111;
-
-    color: white;
+    background: #111111;
+    color: #ffffff;
 }
+
+
+/* PLACEHOLDER */
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #666;
+    color: #666666;
+    opacity: 1;
 }
+
+
+/* SAFARI / AUTOFILL */
+
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:hover,
+.form-group input:-webkit-autofill:focus,
+.form-group textarea:-webkit-autofill,
+.form-group textarea:-webkit-autofill:hover,
+.form-group textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: #ffffff;
+
+    transition:
+        background-color 9999s ease-in-out 0s;
+}
+
+
+/* BUTTON */
 
 .form-submit {
     margin-top: 20px;
